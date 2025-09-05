@@ -1,5 +1,6 @@
 # SineHalftone
-A python script that creates an SVG vector line dither or halftone effect from an input bitmap, modulated by frequency and amplitude.
+A python script that creates an SVG vector line dither or halftone effect from an input bitmap, modulated by frequency and amplitude. This may be a useful effect for people using a pen plotter or engraver.
+This is by no means my original idea but I couldn't think of an easy way of doing it in Inkscape so I wrote this script. Searching "squiggle portrait" yields works with a similar style and I realised after writing this, that this is probably just a worse version of the [SquiggleDraw](https://github.com/gwygonik/SquiggleDraw) and [SquiggleCam](https://msurguy.github.io/SquiggleCam/) repos but oh well.
 At some point I would like to turn this into an inkscape extension.
 
 Below is an example of the effect it produces. The input test file width was about 175px.
