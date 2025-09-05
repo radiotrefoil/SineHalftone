@@ -33,6 +33,8 @@ for y in range(0, height, band_height):
     plt.plot(x, wave, color="black", linewidth=0.8)
     points = [(float(xi), float(wi)) for xi, wi in zip(x, wave)]
     path = "M " + " L ".join(f"{px:.3f},{py:.3f}" for px, py in points)
+
+    # Output SVG line style
     dwg.add(dwg.path(d=path, stroke="black", fill="none", stroke_width=0.2))
 
 dwg.save()
@@ -41,5 +43,6 @@ plt.gca().invert_yaxis()
 plt.axis("off")
 plt.tight_layout()
 plt.show()
+
 
 print(f"Saved SVG to {output_file}")
